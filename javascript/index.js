@@ -1,26 +1,26 @@
 function updateTime() {
-  // Los Angeles
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+  // Istanbul
+  let istanbulElement = document.querySelector("#istanbul");
+  if (istanbulElement) {
+    let istanbulDateElement = istanbulElement.querySelector(".date");
+    let istanbulTimeElement = istanbulElement.querySelector(".time");
+    let istanbulTime = moment().tz("Europe/Istanbul");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+    istanbulDateElement.innerHTML = istanbulTime.format("MMMM	Do YYYY");
+    istanbulTimeElement.innerHTML = istanbulTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  // Paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  // Dubai
+  let dubaiElement = document.querySelector("#dubai");
+  if (dubaiElement) {
+    let dubaiDateElement = dubaiElement.querySelector(".date");
+    let dubaiTimeElement = dubaiElement.querySelector(".time");
+    let dubaiTime = moment().tz("Asia/Dubai");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+    dubaiDateElement.innerHTML = dubaiTime.format("MMMM	Do YYYY");
+    dubaiTimeElement.innerHTML = dubaiTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
